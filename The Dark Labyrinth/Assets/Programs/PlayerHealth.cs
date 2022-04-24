@@ -41,4 +41,12 @@ public class PlayerHealth : MonoBehaviour
         // this will destroy the game object
         Destroy(gameObject);
     }
+
+    public int GetHealth() 
+    {
+
+       return currentHealth;
+    
+    
+    }
 }
