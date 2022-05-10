@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     // varible for the players health at the beginning 
     public int startingHealth;
-
+    public string gameOverScene;
     int currentHealth;
     // the players current health
 
@@ -26,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         // keep health between 0 and starting health 
         
         // if our health drops to 0 player must die
-        if (currentHealth == 0) 
+        if (currentHealth <= 0) 
         {
             // call the kill function to kill player 
             Kill();
@@ -40,6 +41,9 @@ public class PlayerHealth : MonoBehaviour
     {
         // this will destroy the game object
         Destroy(gameObject);
+
+        // load game over scene
+        SceneManager.LoadScene(gameOverScene);
     }
 
     public int GetHealth() 
