@@ -12,6 +12,8 @@ public class PlayerFire2 : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             Shoot();
+
+            
         }
 
 
@@ -21,7 +23,11 @@ public class PlayerFire2 : MonoBehaviour
         {
 
             Instantiate(bulletPrefab, firepoint2.position, firepoint2.rotation);
-
+            Animator playerAnimator;
+            playerAnimator = GetComponent<Animator>();
+            playerAnimator.SetTrigger("RightAttack");
         }
+        
     }
+    
 }

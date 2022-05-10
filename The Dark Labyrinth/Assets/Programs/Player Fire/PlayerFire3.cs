@@ -22,6 +22,10 @@ public class PlayerFire3 : MonoBehaviour
 
             Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
 
+            Animator playerAnimator;
+            playerAnimator = GetComponent<Animator>();
+            playerAnimator.SetTrigger("UpwardAttack");
+
         }
     }
 }

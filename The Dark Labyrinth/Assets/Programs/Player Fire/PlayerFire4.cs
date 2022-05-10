@@ -21,7 +21,12 @@ public class PlayerFire4 : MonoBehaviour
         {
 
             Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-
+           
+            Animator playerAnimator;
+            playerAnimator = GetComponent<Animator>();
+            playerAnimator.SetTrigger("LeftAttack");
         }
+        
     }
+    
 }
