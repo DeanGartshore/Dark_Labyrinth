@@ -10,7 +10,7 @@ public class LoadGame : MonoBehaviour
 
 
 
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Intro Level");
     
     
     }
