@@ -1380,8 +1380,6 @@ GameObject:
   - component: {fileID: 1309065058}
   - component: {fileID: 1309065063}
   - component: {fileID: 1309065062}
-  - component: {fileID: 1309065064}
-  - component: {fileID: 1309065065}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1543,36 +1541,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1309065064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309065057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d44e274609ff164991d0442f8e694be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firepoint: {fileID: 0}
-  bulletPrefab: {fileID: 0}
---- !u!114 &1309065065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309065057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb788a3ca1ba75479a1ee332e2f4cec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreDisplay: {fileID: 0}
-  shouldReset: 0
-  winningScore: 0
-  winningScene: 
 --- !u!1 &1316767714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514070805}
   m_LocalRotation: {x: -0.00550665, y: -0.005528677, z: -0.7084954, w: -0.70567244}
-  m_LocalPosition: {x: -4.83, y: -4.67, z: 0.09}
+  m_LocalPosition: {x: -4.59, y: -4.6, z: 0.09}
   m_LocalScale: {x: 1.1571, y: 0.8273752, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
