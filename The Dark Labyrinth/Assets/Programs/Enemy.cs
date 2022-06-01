@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
        
         health -= damage;
 
-        if (health <= 0)
+        if (health <= 0) // enemy dies if health reaches 0 
         {
             Die();
         }
@@ -23,6 +23,6 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Destroy(gameObject); // death effect will be displayed 
     }
 }

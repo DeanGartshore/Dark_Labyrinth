@@ -10,7 +10,7 @@ public class LoadGame : MonoBehaviour
 
 
 
-        SceneManager.LoadScene("Intro Level");
+        SceneManager.LoadScene("Intro Level");// pressing button leads to main game 
     
     
     }

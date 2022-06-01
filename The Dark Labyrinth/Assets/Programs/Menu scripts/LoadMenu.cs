@@ -10,7 +10,7 @@ public class LoadMenu : MonoBehaviour
 
 
 
-        SceneManager.LoadScene("Start Up Menu");
+        SceneManager.LoadScene("Start Up Menu");// pressing button retruns to main menu
 
 
     }
