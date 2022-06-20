@@ -8,9 +8,13 @@ public class LoadGame : MonoBehaviour
     public void PlayGame() 
     {
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Intro Level");
 
+        }
 
-        SceneManager.LoadScene("Intro Level");// pressing button leads to main game 
+          
     
     
     }

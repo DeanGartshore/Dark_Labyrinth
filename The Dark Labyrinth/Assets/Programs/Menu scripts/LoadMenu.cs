@@ -8,9 +8,12 @@ public class LoadMenu : MonoBehaviour
     public void PlayGame()
     {
 
+       
 
+            SceneManager.LoadScene("Start Up Menu");
 
-        SceneManager.LoadScene("Start Up Menu");// pressing button retruns to main menu
+       
+        
 
 
     }

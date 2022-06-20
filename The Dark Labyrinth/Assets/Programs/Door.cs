@@ -11,6 +11,11 @@ public class Door : MonoBehaviour
     {
         //Debug.Log("Object hit the door!");
 
-        SceneManager.LoadScene(levelToLoad);
+        if (otherCollider.tag == "Player")
+        {
+
+            SceneManager.LoadScene(levelToLoad);
+        }
+        
     }
 }
